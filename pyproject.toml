@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["version"]
+name = "responder"
+dependencies = [
+	"netifaces>=0.10.4",
+]
+requires-python = ">=3.6"
+authors = [
+	{name = "Laurent Gaffie", email = "laurent.gaffie@gmail.com"}
+]
+description = "IPv6/IPv4 LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay."
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["LLMNR", "Poisoning", "Windows", "SMB", "Relay", "NBT-NS", "NTLM"]
+classifiers = [
+	"Intended Audience :: Developers",
+	"License :: GPL",
+	"Programming Language :: Python 3",
+	"Programming Language :: Python 3.6",
+	"Programming Language :: Python 3.7",
+	"Programming Language :: Python 3.8",
+	"Programming Language :: Python 3.9",
+	"Programming Language :: Python 3.10",
+	"Programming Language :: Python 3.11",
+	"Programming Language :: Python 3.12",
+]
+
+[project.scripts]
+responder = "Responder.Responder:main"
+
+[project.urls]
+Repository = "https://github.com/lgandx/Responder"
+Issues = "https://github.com/lgandx/Responder/issues"
+Changelog = "https://github.com/lgandx/Responder/CHANGELOG.md"
+

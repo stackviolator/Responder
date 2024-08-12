@@ -1,0 +1,7 @@
+include MANIFEST.in
+include LICENSE
+include CHANGELOG.md
+include README.md
+include OSX_launcher
+
+include Responder/Responder.conf

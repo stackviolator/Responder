@@ -9,3 +9,6 @@
 # Generated certificates and keys
 certs/*.crt
 certs/*.key
+
+build/*
+responder.eg-info/*

@@ -347,6 +347,7 @@ class Settings:
 		else:
 			#If it's the first time, generate SSL certs for this Responder session and send openssl output to /dev/null
 			# Certs = os.system(self.ResponderPATH+"/certs/gen-self-signed-cert.sh >/dev/null 2>&1")
+			print(self.ResponderPATH + '/certs')
 			Certs = os.system(f"{self.ResponderPATH}/certs/gen-self-signed-cert.sh {self.ResponderPATH} >/dev/null 2>&1")
 		
 		try:

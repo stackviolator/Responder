@@ -5,3 +5,6 @@ include README.md
 include OSX_launcher
 
 include Responder/Responder.conf
+include Responder/certs/*
+include Responder/files/*
+include Responder/logs/*

@@ -11,4 +11,4 @@ certs/*.crt
 certs/*.key
 
 build/*
-responder.eg-info/*
+responder.egg-info/*
